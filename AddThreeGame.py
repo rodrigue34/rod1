@@ -36,9 +36,15 @@ class AddThreeGame:
                      if self.__moves == [x for x in range(0,10)]:
                          self.__state = "DRAW"
                          return True
+                 return True
          return False
 
-
+game = AddThreeGame()
+game.make_move("first", 2)
+game.make_move("second", 5)
+result = game.make_move("first", 7)
+state = game.get_current_state()
+print(result)
 
 
 
