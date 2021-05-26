@@ -39,12 +39,6 @@ class AddThreeGame:
                  return True
          return False
 
-game = AddThreeGame()
-game.make_move("first", 2)
-game.make_move("second", 5)
-result = game.make_move("first", 7)
-state = game.get_current_state()
-print(result)
 
 
 
